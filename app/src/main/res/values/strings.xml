@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">MadLevel1Task2</string>
+    <string name="title_conjunction">Conjunction (AND)</string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="a_b">A ^ B</string>
+    <string name="text_true">T</string>
+    <string name="text_false">F</string>
 </resources>
