@@ -7,4 +7,6 @@
     <string name="text_true">T</string>
     <string name="text_false">F</string>
     <string name="submit">submit</string>
+    <string name="toast_correct">Correct!</string>
+    <string name="toast_incorrect">Incorrect!</string>
 </resources>
