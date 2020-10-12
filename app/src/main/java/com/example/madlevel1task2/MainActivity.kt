@@ -48,8 +48,8 @@ class MainActivity : AppCompatActivity() {
         answers[2] = parseAnswer(binding.row3Input.text.toString())
         answers[3] = parseAnswer(binding.row4Input.text.toString())
 
+        // Count correct answers
         var correctAnswers: Int = 0
-
         if (answers[0]) {
             correctAnswers++
         }
@@ -63,8 +63,9 @@ class MainActivity : AppCompatActivity() {
             correctAnswers++
         }
 
+        // Assert and create toast
         if (answers[0] && !answers[1] && !answers[2] && !answers[3]) {
-            Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, getString(R.string.toast_correct, correctAnswers), Toast.LENGTH_SHORT).show()
         } else {
             Toast.makeText(this, getString(R.string.toast_incorrect, correctAnswers), Toast.LENGTH_SHORT).show()
         }
